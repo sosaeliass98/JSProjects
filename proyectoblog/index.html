@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <title>Adolescencia</title>
+</head>
+  <script>
+  function mostrar(id) {
+    obj = document.getElementById(id);
+    obj.style.visibility = (obj.style.visibility == 'hidden') ? 'visible' : 'hidden';
+  }
+  </script>
+<body>
+    
+
+  <!--Header INICIO-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">La Adolescencia y Las Tic en Pandemia</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">Sobre Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Nuestro Objetivo</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Contenido
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--Header FIN-->
+
+      <div class="card" style="display: flex;">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align: center;">Card title</h5>
+          <p class="card-text" style="text-align: center;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="card-link" style="text-align: center;">Indice</a>
+          <a href="presentacion.html" class="card-link" style="text-align: center;">Presentación</a>
+        </div>
+      </div>
+
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+          The current link item
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">Presentación</a>
+        <a href="#" class="list-group-item list-group-item-action">Introducción</a>
+        <a href="#" class="list-group-item list-group-item-action">Objetivos Generales</a>
+        <a href="#" class="list-group-item list-group-item-action">Objetivos Principales</a>
+      </div>
+
+      <a href="#" onclick="mostrar('divTexto1'); return false" />Hago clic aca y se ve u oculta UNO</a>
+      <div id="divTexto1" style="visibility:hidden">
+      UNO
+      </div>
+      <BR>
+      <a href="#" onclick="mostrar('divTexto2'); return false" />Hago clic aca y se ve u oculta DOS</a>
+      <div id="divTexto2" style="visibility:hidden">
+</body>
+</html>
